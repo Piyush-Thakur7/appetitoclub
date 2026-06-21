@@ -266,24 +266,69 @@ header.scrolled .navbar {
   margin: 0 auto;
 }
 
-.logo {
+.logo-brand {
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-.logo img {
-  height: 65px; /* Larger logo text height! */
-  width: auto;
-  background-color: transparent;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
+  line-height: 1;
+  text-decoration: none;
+  position: relative;
   transition: var(--transition-smooth);
 }
 
-header.scrolled .logo img {
-  height: 55px; /* Slightly smaller when scrolled */
+.logo-main-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.logo-main-text {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.6rem;
+  color: var(--text-light); /* Cream white */
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: var(--transition-smooth);
+}
+
+.logo-leaves-svg {
+  position: absolute;
+  top: 6px;
+  right: 22px; /* Positioned exactly on top of the 'ti' */
+  width: 20px;
+  height: 20px;
+  fill: var(--accent-terracotta);
+  transform: rotate(-5deg);
+  transition: var(--transition-smooth);
+}
+
+.logo-sub-text {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  color: var(--text-muted);
+  margin-top: -3px;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+}
+
+/* Sizing updates on scroll state */
+header.scrolled .logo-main-text {
+  font-size: 2.2rem;
+}
+
+header.scrolled .logo-leaves-svg {
+  top: 5px;
+  right: 18px;
+  width: 17px;
+  height: 17px;
+}
+
+header.scrolled .logo-sub-text {
+  font-size: 0.55rem;
+  letter-spacing: 1px;
+  margin-top: -2px;
 }
 
 .nav-menu {
@@ -850,17 +895,23 @@ footer {
 
 .footer-logo {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.footer-logo img {
-  height: 52px;
-  width: auto;
-  background-color: #FFFFFF;
-  padding: 4px 8px;
-  border-radius: 8px;
-  border: 1px solid rgba(94, 138, 117, 0.1);
-  display: block;
+.footer-logo .logo-main-text {
+  font-size: 3rem;
+}
+
+.footer-logo .logo-leaves-svg {
+  width: 23px;
+  height: 23px;
+  right: 25px;
+  top: 7px;
+}
+
+.footer-logo .logo-sub-text {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
 }
 
 .footer-col h4 {

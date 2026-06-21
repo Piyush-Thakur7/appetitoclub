@@ -10,7 +10,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -53,8 +53,15 @@
   <header>
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="index.html" class="logo">
-          <img src="images/logo.png" alt="Appetito Logo">
+        <a href="index.html" class="logo-brand">
+          <div class="logo-main-wrapper">
+            <span class="logo-main-text">Appetito</span>
+            <svg class="logo-leaves-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12,12 C9.5,8 6,8 4.5,10 C6,12.5 9,13 12,12 Z"></path>
+              <path d="M12,12 C13,8.5 15.5,6.5 18,7 C17.5,9.5 15,12 12,12 Z"></path>
+            </svg>
+          </div>
+          <div class="logo-sub-text">a fiesta of flavours</div>
         </a>
         
         <ul class="nav-menu">
@@ -105,15 +112,15 @@
       <div class="menu-item-wrapper" data-category="starters">
         <div class="menu-card">
           <div class="menu-card-img">
-            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=600" alt="Tandoori Paneer Tikka">
+            <img src="https://images.unsplash.com/photo-1625220194771-7ebedd0b70b9?auto=format&fit=crop&q=80&w=600" alt="Crispy Chilli Momos">
           </div>
           <div class="menu-card-content">
             <div>
               <div class="menu-card-header">
-                <h3 class="menu-card-title">Tandoori Paneer Tikka</h3>
-                <span class="menu-card-price">₹349</span>
+                <h3 class="menu-card-title">Crispy Chilli Momos</h3>
+                <span class="menu-card-price">₹280</span>
               </div>
-              <p class="menu-card-desc">Cottage cheese cubes marinated in rich Indian spices, yogurt, grilled golden in clay oven.</p>
+              <p class="menu-card-desc">Gently steamed dumplings fried crispy and tossed in a fiery, sweet-and-sour red chili garlic sauce.</p>
             </div>
             <div class="menu-card-tags">
               <span class="menu-tag">Veg</span>
@@ -135,7 +142,7 @@
                 <h3 class="menu-card-title">Loaded Cheese Nachos</h3>
                 <span class="menu-card-price">₹299</span>
               </div>
-              <p class="menu-card-desc">Crispy tortilla chips layered with cheese sauce, jalapenos, fresh salsa, and sour cream.</p>
+              <p class="menu-card-desc">Crispy tortilla chips layered with warm melted cheese, jalapenos, dynamic fresh salsa, and sour cream.</p>
             </div>
             <div class="menu-card-tags">
               <span class="menu-tag">Veg</span>
@@ -148,19 +155,62 @@
       <div class="menu-item-wrapper" data-category="starters">
         <div class="menu-card">
           <div class="menu-card-img">
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600" alt="Chicken Tikka Skewers">
+            <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&q=80&w=600" alt="Garlic Bread with Cheese">
           </div>
           <div class="menu-card-content">
             <div>
               <div class="menu-card-header">
-                <h3 class="menu-card-title">Chicken Tikka Skewers</h3>
-                <span class="menu-card-price">₹399</span>
+                <h3 class="menu-card-title">Garlic Bread with Cheese</h3>
+                <span class="menu-card-price">₹180</span>
               </div>
-              <p class="menu-card-desc">Juicy chicken chunks infused with mustard oil and Kashmiri chili, roasted on skewers.</p>
+              <p class="menu-card-desc">Oven-toasted French baguette slices spread with garlic butter and topped with melted mozzarella cheese.</p>
             </div>
             <div class="menu-card-tags">
-              <span class="menu-tag">Non-Veg</span>
-              <span class="menu-tag gold">Hot</span>
+              <span class="menu-tag">Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3A: Starters -->
+      <div class="menu-item-wrapper" data-category="starters">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600" alt="Thai Highway Rolls">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Thai Highway Rolls</h3>
+                <span class="menu-card-price">₹290</span>
+              </div>
+              <p class="menu-card-desc">Crispy golden spring rolls packed with seasoned glass noodles, crunchy vegetables, and Thai herbs, served with sweet chili dip.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+              <span class="menu-tag gold">Popular</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3B: Starters -->
+      <div class="menu-item-wrapper" data-category="starters">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&q=80&w=600" alt="Philly Willy Dimsums">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Philly Willy Dimsums</h3>
+                <span class="menu-card-price">₹310</span>
+              </div>
+              <p class="menu-card-desc">Delicately steamed dumplings filled with a luscious combination of cream cheese, water chestnuts, and fresh green herbs.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+              <span class="menu-tag gold">Signature</span>
             </div>
           </div>
         </div>
@@ -170,19 +220,19 @@
       <div class="menu-item-wrapper" data-category="mains">
         <div class="menu-card">
           <div class="menu-card-img">
-            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" alt="Appetito Club Pizza">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=600" alt="Spaghetti Alla Ricotta Verde">
           </div>
           <div class="menu-card-content">
             <div>
               <div class="menu-card-header">
-                <h3 class="menu-card-title">Appetito Club Pizza</h3>
-                <span class="menu-card-price">₹499</span>
+                <h3 class="menu-card-title">Spaghetti Alla Ricotta Verde</h3>
+                <span class="menu-card-price">₹445</span>
               </div>
-              <p class="menu-card-desc">Signature thin-crust wood-fired pizza loaded with sundried tomatoes, fresh mozzarella, and olives.</p>
+              <p class="menu-card-desc">Gently tossed spaghetti with creamy Italian ricotta cheese, green leafy spinach, garlic, and pine nuts.</p>
             </div>
             <div class="menu-card-tags">
               <span class="menu-tag">Veg</span>
-              <span class="menu-tag gold">Best Seller</span>
+              <span class="menu-tag gold">Signature</span>
             </div>
           </div>
         </div>
@@ -198,9 +248,9 @@
             <div>
               <div class="menu-card-header">
                 <h3 class="menu-card-title">Fettuccine Alfredo</h3>
-                <span class="menu-card-price">₹429</span>
+                <span class="menu-card-price">₹445</span>
               </div>
-              <p class="menu-card-desc">Creamy Parmesan butter sauce tossed with grilled mushrooms and hand-rolled fettuccine.</p>
+              <p class="menu-card-desc">Creamy Parmesan butter sauce tossed with grilled mushrooms and hand-rolled al dente fettuccine.</p>
             </div>
             <div class="menu-card-tags">
               <span class="menu-tag">Veg</span>
@@ -213,15 +263,57 @@
       <div class="menu-item-wrapper" data-category="mains">
         <div class="menu-card">
           <div class="menu-card-img">
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=600" alt="Gourmet Chicken Burger">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&q=80&w=600" alt="Penne All'Arrabbiata">
           </div>
           <div class="menu-card-content">
             <div>
               <div class="menu-card-header">
-                <h3 class="menu-card-title">Appetito Special Burger</h3>
-                <span class="menu-card-price">₹379</span>
+                <h3 class="menu-card-title">Penne All'Arrabbiata</h3>
+                <span class="menu-card-price">₹445</span>
               </div>
-              <p class="menu-card-desc">Juicy grilled chicken breast, caramelized onions, melted cheddar cheese on a toasted brioche bun.</p>
+              <p class="menu-card-desc">Spicy tomato sauce base infused with garlic, red chili flakes, fresh basil, and extra virgin olive oil.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 7: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" alt="Butter Chicken Pizza">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Butter Chicken Pizza</h3>
+                <span class="menu-card-price">₹495</span>
+              </div>
+              <p class="menu-card-desc">A fusion delight: wood-fired pizza base topped with rich butter chicken chunks, makhani gravy, and mozzarella.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag gold">Best Seller</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 8: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=600" alt="Chicken Shroom Supreme Pizza">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Chicken Shroom Supreme</h3>
+                <span class="menu-card-price">₹525</span>
+              </div>
+              <p class="menu-card-desc">Loaded with grilled chicken strips, roasted mushrooms, onions, bell peppers, and signature marinara sauce.</p>
             </div>
             <div class="menu-card-tags">
               <span class="menu-tag">Non-Veg</span>
@@ -230,7 +322,114 @@
         </div>
       </div>
 
-      <!-- ITEM 7: Beverages -->
+      <!-- ITEM 9: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&q=80&w=600" alt="Chipotle Chicken Pizza">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Chipotle Chicken Pizza</h3>
+                <span class="menu-card-price">₹525</span>
+              </div>
+              <p class="menu-card-desc">Wood-fired pizza topped with spicy chipotle shredded chicken, jalapeños, red onions, and cilantro drizzle.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Non-Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 10: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&q=80&w=600" alt="Gourmet Spaghetti Aglio e Olio">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Gourmet Spaghetti Aglio e Olio</h3>
+                <span class="menu-card-price">₹395</span>
+              </div>
+              <p class="menu-card-desc">Traditional Italian spaghetti tossed in extra virgin olive oil, sliced garlic, chili flakes, and fresh parsley.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+              <span class="menu-tag gold">Chef's Special</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 10A: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=600" alt="Beetroot Burger">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Signature Beetroot Burger</h3>
+                <span class="menu-card-price">₹320</span>
+              </div>
+              <p class="menu-card-desc">Rich house-made beetroot patty with green lettuce, sliced tomatoes, caramelized onions, and a special herb sauce on a toasted brioche bun.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+              <span class="menu-tag gold">Best Seller</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 10B: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=600" alt="Captain Pepperoni Pizza">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Captain Pepperoni Pizza</h3>
+                <span class="menu-card-price">₹545</span>
+              </div>
+              <p class="menu-card-desc">Classic wood-fired hand-tossed pizza base layered with rich marinara sauce, mozzarella cheese, and loaded with spicy pork pepperoni.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Non-Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 11: Beverages -->
+      <div class="menu-item-wrapper" data-category="beverages">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&q=80&w=600" alt="Matcha Latte">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Gourmet Matcha Latte</h3>
+                <span class="menu-card-price">₹245</span>
+              </div>
+              <p class="menu-card-desc">Premium grade Japanese stone-ground green tea whisked with warm, creamy steamed milk.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag gold">Hot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 12: Beverages -->
       <div class="menu-item-wrapper" data-category="beverages">
         <div class="menu-card">
           <div class="menu-card-img">
@@ -251,7 +450,7 @@
         </div>
       </div>
 
-      <!-- ITEM 8: Beverages -->
+      <!-- ITEM 13: Beverages -->
       <div class="menu-item-wrapper" data-category="beverages">
         <div class="menu-card">
           <div class="menu-card-img">
@@ -272,7 +471,49 @@
         </div>
       </div>
 
-      <!-- ITEM 9: Desserts -->
+      <!-- ITEM 13A: Beverages -->
+      <div class="menu-item-wrapper" data-category="beverages">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&q=80&w=600" alt="Mandarin Lime Lullaby">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Mandarin Lime Lullaby</h3>
+                <span class="menu-card-price">₹220</span>
+              </div>
+              <p class="menu-card-desc">A soothing citrus mocktail made with sweet mandarin orange juice, fresh lime juice, crushed mint, and sweet ginger ale.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag gold">Trending</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 13B: Beverages -->
+      <div class="menu-item-wrapper" data-category="beverages">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=600" alt="Tiki Tropics Mocktail">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Tiki Tropics Mocktail</h3>
+                <span class="menu-card-price">₹240</span>
+              </div>
+              <p class="menu-card-desc">A refreshing tropical getaway blend of pineapple, mango nectar, coconut cream, and a splash of lime juice.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag gold">Signature</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 14: Desserts -->
       <div class="menu-item-wrapper" data-category="desserts">
         <div class="menu-card">
           <div class="menu-card-img">
@@ -293,7 +534,7 @@
         </div>
       </div>
 
-      <!-- ITEM 10: Desserts -->
+      <!-- ITEM 15: Desserts -->
       <div class="menu-item-wrapper" data-category="desserts">
         <div class="menu-card">
           <div class="menu-card-img">
@@ -324,8 +565,15 @@
     <div class="footer-grid container">
       <!-- Footer Col 1 -->
       <div class="footer-col">
-        <a href="index.html" class="footer-logo">
-          <img src="images/logo.png" alt="Appetito Logo">
+        <a href="index.html" class="logo-brand">
+          <div class="logo-main-wrapper">
+            <span class="logo-main-text">Appetito</span>
+            <svg class="logo-leaves-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12,12 C9.5,8 6,8 4.5,10 C6,12.5 9,13 12,12 Z"></path>
+              <path d="M12,12 C13,8.5 15.5,6.5 18,7 C17.5,9.5 15,12 12,12 Z"></path>
+            </svg>
+          </div>
+          <div class="logo-sub-text">a fiesta of flavours</div>
         </a>
         <p>A premier social dining and outdoor recreation destination in Greater Noida. Good food, amazing sports, live music, and unforgettable social vibes.</p>
         <div class="social-links" style="margin-top: 1.5rem;">

@@ -11,7 +11,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -54,8 +54,15 @@
   <header>
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="index.html" class="logo">
-          <img src="images/logo.png" alt="Appetito Logo">
+        <a href="index.html" class="logo-brand">
+          <div class="logo-main-wrapper">
+            <span class="logo-main-text">Appetito</span>
+            <svg class="logo-leaves-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12,12 C9.5,8 6,8 4.5,10 C6,12.5 9,13 12,12 Z"></path>
+              <path d="M12,12 C13,8.5 15.5,6.5 18,7 C17.5,9.5 15,12 12,12 Z"></path>
+            </svg>
+          </div>
+          <div class="logo-sub-text">a fiesta of flavours</div>
         </a>
         
         <ul class="nav-menu">
@@ -181,15 +188,15 @@
       <!-- Dish 1 -->
       <div class="menu-card reveal delay-1">
         <div class="menu-card-img">
-          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=800" alt="Tandoori Paneer Tikka">
+          <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=800" alt="Spaghetti Alla Ricotta Verde">
         </div>
         <div class="menu-card-content">
           <div>
             <div class="menu-card-header">
-              <h3 class="menu-card-title">Tandoori Paneer Tikka</h3>
-              <span class="menu-card-price">₹349</span>
+              <h3 class="menu-card-title">Spaghetti Alla Ricotta Verde</h3>
+              <span class="menu-card-price">₹445</span>
             </div>
-            <p class="menu-card-desc">Cottage cheese cubes marinated in rich Indian spices, yogurt, grilled golden in a traditional clay oven.</p>
+            <p class="menu-card-desc">Signature spaghetti tossed with smooth ricotta cheese sauce, fresh leafy green spinach, and garlic.</p>
           </div>
           <div class="menu-card-tags">
             <span class="menu-tag">Veg</span>
@@ -201,18 +208,17 @@
       <!-- Dish 2 -->
       <div class="menu-card reveal delay-2">
         <div class="menu-card-img">
-          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800" alt="Wood-fired Gourmet Pizza">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800" alt="Butter Chicken Pizza">
         </div>
         <div class="menu-card-content">
           <div>
             <div class="menu-card-header">
-              <h3 class="menu-card-title">Appetito Club Pizza</h3>
-              <span class="menu-card-price">₹499</span>
+              <h3 class="menu-card-title">Butter Chicken Pizza</h3>
+              <span class="menu-card-price">₹495</span>
             </div>
-            <p class="menu-card-desc">Signature thin-crust wood-fired pizza loaded with sundried tomatoes, fresh mozzarella, and olives.</p>
+            <p class="menu-card-desc">A fusion delight: wood-fired pizza base topped with rich butter chicken chunks, makhani gravy, and mozzarella.</p>
           </div>
           <div class="menu-card-tags">
-            <span class="menu-tag">Veg</span>
             <span class="menu-tag gold">Best Seller</span>
           </div>
         </div>
@@ -221,18 +227,19 @@
       <!-- Dish 3 -->
       <div class="menu-card reveal delay-1">
         <div class="menu-card-img">
-          <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&q=80&w=800" alt="Fettuccine Alfredo Pasta">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=800" alt="Beetroot Burger">
         </div>
         <div class="menu-card-content">
           <div>
             <div class="menu-card-header">
-              <h3 class="menu-card-title">Fettuccine Alfredo</h3>
-              <span class="menu-card-price">₹429</span>
+              <h3 class="menu-card-title">Signature Beetroot Burger</h3>
+              <span class="menu-card-price">₹320</span>
             </div>
-            <p class="menu-card-desc">Creamy Parmesan butter sauce tossed with grilled mushrooms and dynamic hand-rolled fettuccine.</p>
+            <p class="menu-card-desc">Rich house-made beetroot patty, green lettuce, tomatoes, caramelized onions, and herb sauce on a brioche bun.</p>
           </div>
           <div class="menu-card-tags">
             <span class="menu-tag">Veg</span>
+            <span class="menu-tag gold">Best Seller</span>
           </div>
         </div>
       </div>
@@ -240,18 +247,18 @@
       <!-- Dish 4 -->
       <div class="menu-card reveal delay-2">
         <div class="menu-card-img">
-          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800" alt="Signature Cocktails">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=800" alt="Tiki Tropics Mocktail">
         </div>
         <div class="menu-card-content">
           <div>
             <div class="menu-card-header">
-              <h3 class="menu-card-title">Sunset Terracotta Mocktail</h3>
-              <span class="menu-card-price">₹229</span>
+              <h3 class="menu-card-title">Tiki Tropics Mocktail</h3>
+              <span class="menu-card-price">₹240</span>
             </div>
-            <p class="menu-card-desc">A refreshing blend of burnt orange, passion fruit pulp, sparkling tonic, topped with rosemary.</p>
+            <p class="menu-card-desc">A refreshing tropical getaway blend of pineapple, mango nectar, coconut cream, and a splash of lime juice.</p>
           </div>
           <div class="menu-card-tags">
-            <span class="menu-tag gold">Trending</span>
+            <span class="menu-tag gold">Signature</span>
           </div>
         </div>
       </div>
@@ -485,8 +492,15 @@
     <div class="footer-grid container">
       <!-- Footer Col 1 -->
       <div class="footer-col">
-        <a href="index.html" class="footer-logo">
-          <img src="images/logo.png" alt="Appetito Logo">
+        <a href="index.html" class="logo-brand">
+          <div class="logo-main-wrapper">
+            <span class="logo-main-text">Appetito</span>
+            <svg class="logo-leaves-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12,12 C9.5,8 6,8 4.5,10 C6,12.5 9,13 12,12 Z"></path>
+              <path d="M12,12 C13,8.5 15.5,6.5 18,7 C17.5,9.5 15,12 12,12 Z"></path>
+            </svg>
+          </div>
+          <div class="logo-sub-text">a fiesta of flavours</div>
         </a>
         <p>A premier social dining and outdoor recreation destination in Greater Noida. Good food, amazing sports, live music, and unforgettable social vibes.</p>
         <div class="social-links" style="margin-top: 1.5rem;">
