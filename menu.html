@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Appetito Club</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore the menu at Appetito Club in Greater Noida. Wood-fired pizzas, gourmet pastas, delicious starters, mocktails, and decadent desserts.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+     Top Contact & Info Bar
+     ========================================== -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="top-info-left">
+        <span class="info-item">
+          <i class="fa-solid fa-phone"></i> 
+          <a href="tel:08860023344">08860023344</a>
+        </span>
+        <span class="info-item">
+          <i class="fa-solid fa-envelope"></i> 
+          <a href="mailto:sales@appetito.in">sales@appetito.in</a>
+        </span>
+        <span class="info-item">
+          <i class="fa-solid fa-location-dot"></i> 
+          <span>Knowledge Park II, Greater Noida</span>
+        </span>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/appetitoclub" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     Sticky Navigation Header
+     ========================================== -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="logo">
+          Appetito<span>.</span>
+        </a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link active">Menu</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+     Sub-page Banner
+     ========================================== -->
+  <section class="page-banner">
+    <div class="container reveal">
+      <h1>Our Menu</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a><span>&bull;</span><span>Menu</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     Dynamic Menu Filtering Section
+     ========================================== -->
+  <section class="container reveal">
+    <!-- Category Filter Tabs -->
+    <div class="menu-filters">
+      <button class="filter-btn active" data-filter="all">Show All</button>
+      <button class="filter-btn" data-filter="starters">Starters</button>
+      <button class="filter-btn" data-filter="mains">Main Course</button>
+      <button class="filter-btn" data-filter="beverages">Beverages</button>
+      <button class="filter-btn" data-filter="desserts">Desserts</button>
+    </div>
+
+    <!-- Menu Cards Grid -->
+    <div class="menu-grid">
+      
+      <!-- ITEM 1: Starters -->
+      <div class="menu-item-wrapper" data-category="starters">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=600" alt="Tandoori Paneer Tikka">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Tandoori Paneer Tikka</h3>
+                <span class="menu-card-price">₹349</span>
+              </div>
+              <p class="menu-card-desc">Cottage cheese cubes marinated in rich Indian spices, yogurt, grilled golden in clay oven.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+              <span class="menu-tag gold">Chef's Special</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 2: Starters -->
+      <div class="menu-item-wrapper" data-category="starters">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1541014741259-df5290db5785?auto=format&fit=crop&q=80&w=600" alt="Loaded Cheese Nachos">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Loaded Cheese Nachos</h3>
+                <span class="menu-card-price">₹299</span>
+              </div>
+              <p class="menu-card-desc">Crispy tortilla chips layered with cheese sauce, jalapenos, fresh salsa, and sour cream.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3: Starters -->
+      <div class="menu-item-wrapper" data-category="starters">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600" alt="Chicken Tikka Skewers">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Chicken Tikka Skewers</h3>
+                <span class="menu-card-price">₹399</span>
+              </div>
+              <p class="menu-card-desc">Juicy chicken chunks infused with mustard oil and Kashmiri chili, roasted on skewers.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Non-Veg</span>
+              <span class="menu-tag gold">Hot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 4: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" alt="Appetito Club Pizza">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Appetito Club Pizza</h3>
+                <span class="menu-card-price">₹499</span>
+              </div>
+              <p class="menu-card-desc">Signature thin-crust wood-fired pizza loaded with sundried tomatoes, fresh mozzarella, and olives.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+              <span class="menu-tag gold">Best Seller</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 5: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&q=80&w=600" alt="Fettuccine Alfredo Pasta">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Fettuccine Alfredo</h3>
+                <span class="menu-card-price">₹429</span>
+              </div>
+              <p class="menu-card-desc">Creamy Parmesan butter sauce tossed with grilled mushrooms and hand-rolled fettuccine.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 6: Mains -->
+      <div class="menu-item-wrapper" data-category="mains">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=600" alt="Gourmet Chicken Burger">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Appetito Special Burger</h3>
+                <span class="menu-card-price">₹379</span>
+              </div>
+              <p class="menu-card-desc">Juicy grilled chicken breast, caramelized onions, melted cheddar cheese on a toasted brioche bun.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Non-Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 7: Beverages -->
+      <div class="menu-item-wrapper" data-category="beverages">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=600" alt="Sunset Terracotta Mocktail">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Sunset Terracotta Mocktail</h3>
+                <span class="menu-card-price">₹229</span>
+              </div>
+              <p class="menu-card-desc">A refreshing blend of burnt orange, passion fruit pulp, sparkling tonic, topped with rosemary.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag gold">Trending</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 8: Beverages -->
+      <div class="menu-item-wrapper" data-category="beverages">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&q=80&w=600" alt="Fresh Mint Mojito">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Fresh Mint Mojito</h3>
+                <span class="menu-card-price">₹189</span>
+              </div>
+              <p class="menu-card-desc">Crushed mint leaves, lime wedges, simple syrup, muddled and topped with club soda and ice.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 9: Desserts -->
+      <div class="menu-item-wrapper" data-category="desserts">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&q=80&w=600" alt="Chocolate Lava Cake">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Molten Chocolate Lava</h3>
+                <span class="menu-card-price">₹249</span>
+              </div>
+              <p class="menu-card-desc">Decadent chocolate cake with a rich molten lava core, served with vanilla bean scoop.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag gold">Chef's Special</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 10: Desserts -->
+      <div class="menu-item-wrapper" data-category="desserts">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=600" alt="Sizzling Brownie">
+          </div>
+          <div class="menu-card-content">
+            <div>
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Sizzling Brownie Special</h3>
+                <span class="menu-card-price">₹279</span>
+              </div>
+              <p class="menu-card-desc">Fudgy walnut brownie served on a hot sizzler plate with chocolate syrup and vanilla ice cream.</p>
+            </div>
+            <div class="menu-card-tags">
+              <span class="menu-tag">Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+     Footer Section
+     ========================================== -->
+  <footer>
+    <div class="footer-grid container">
+      <!-- Footer Col 1 -->
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">
+          Appetito<span>.</span>
+        </a>
+        <p>A premier social dining and outdoor recreation destination in Greater Noida. Good food, amazing sports, live music, and unforgettable social vibes.</p>
+        <div class="social-links" style="margin-top: 1.5rem;">
+          <a href="https://instagram.com/appetitoclub" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram" style="font-size: 1.35rem;"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" style="font-size: 1.35rem;"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" style="font-size: 1.35rem;"></i></a>
+        </div>
+      </div>
+      
+      <!-- Footer Col 2 -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="events.html">Events &amp; Activities</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <!-- Footer Col 3 -->
+      <div class="footer-col footer-hours">
+        <h4>Hours of Joy</h4>
+        <p>Monday - Friday: <br><span>11:00 AM - 10:00 PM</span></p>
+        <p>Saturday - Sunday: <br><span>11:00 AM - 11:00 PM</span></p>
+        <p>Happy Hours: <br><span>Monday - Thursday (4 PM - 7 PM)</span></p>
+      </div>
+      
+      <!-- Footer Col 4 -->
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="footer-contact-details" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot" style="margin-top: 0.25rem;"></i>
+            <span>R3, Knowledge Park II, Greater Noida, Uttar Pradesh 201310</span>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:08860023344">08860023344</a>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:sales@appetito.in">sales@appetito.in</a>
+          </div>
+          <div class="info-item">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://instagram.com/appetitoclub" target="_blank">@appetitoclub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom container" style="padding-top: 1.5rem; padding-bottom: 0;">
+      <p>&copy; 2026 Appetito Club. All Rights Reserved. Designed for college presentation reference.</p>
+      <p>
+        <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
