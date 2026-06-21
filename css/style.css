@@ -9,16 +9,17 @@
    ========================================== */
 :root {
   /* Color Palette */
-  --bg-primary: #150F0D;      /* Deep Espresso Charcoal */
-  --bg-secondary: #241914;    /* Warm Mahogany/Espresso Card Bg */
-  --bg-light: #F5EFE6;        /* Soft Cream/Off-White for light sections */
+  --bg-primary: #FAF8F5;      /* Soft Creamy Parchment Background */
+  --bg-secondary: #FFFFFF;    /* Pure White Card Background */
+  --bg-light: #FAF8F5;        /* Light Cream Parchment */
+  --bg-dark: #1E2C26;         /* Deep Slate Green for contrast sections */
   
-  --accent-terracotta: #D9622B; /* Burnt Terracotta Orange */
-  --accent-gold: #D4A24E;       /* Warm Antique Gold */
+  --accent-terracotta: #5E8A75; /* Sage Leaf Green */
+  --accent-gold: #C5A880;       /* Warm Soft Gold / Clay Accent */
   
-  --text-light: #F5EFE6;      /* Off-White Text */
-  --text-muted: #C7BBAE;      /* Warm Grayish Cream Text */
-  --text-dark: #150F0D;       /* Dark text on light backgrounds */
+  --text-light: #FAF8F5;      /* Cream Text on Dark Sections */
+  --text-muted: #6B7570;      /* Muted Slate Grey-Green Text */
+  --text-dark: #2D3A34;       /* Deep Charcoal Slate primary text */
   
   /* Typography */
   --font-heading: 'Fraunces', 'Playfair Display', Georgia, serif;
@@ -28,8 +29,8 @@
   --header-height: 80px;
   --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --border-radius: 12px;
-  --shadow-premium: 0 15px 35px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 20px rgba(217, 98, 43, 0.35);
+  --shadow-premium: 0 10px 30px rgba(45, 58, 52, 0.06);
+  --shadow-glow: 0 0 20px rgba(94, 138, 117, 0.15);
 }
 
 /* ==========================================
@@ -47,7 +48,7 @@ html {
 
 body {
   background-color: var(--bg-primary);
-  color: var(--text-light);
+  color: var(--text-dark);
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
@@ -58,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: 0.5px;
+  color: var(--text-dark);
 }
 
 h1 {
@@ -185,8 +187,8 @@ a {
    4. Sticky Navbar & Contact Info Bar
    ========================================== */
 .top-bar {
-  background-color: rgba(21, 15, 13, 0.95);
-  border-bottom: 1px solid rgba(199, 187, 174, 0.1);
+  background-color: #FAF8F5;
+  border-bottom: 1px solid rgba(94, 138, 117, 0.1);
   padding: 0.5rem 0;
   font-size: 0.85rem;
 }
@@ -213,11 +215,11 @@ a {
 }
 
 .info-item i {
-  color: var(--accent-gold);
+  color: var(--accent-terracotta);
 }
 
 .info-item a:hover {
-  color: var(--accent-gold);
+  color: var(--accent-terracotta);
 }
 
 .social-links {
@@ -247,12 +249,12 @@ header {
 }
 
 header.scrolled .navbar {
-  background-color: rgba(21, 15, 13, 0.95);
+  background-color: rgba(250, 248, 245, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding: 0.85rem 0;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(199, 187, 174, 0.05);
+  box-shadow: 0 5px 25px rgba(45, 58, 52, 0.05);
+  border-bottom: 1px solid rgba(94, 138, 117, 0.08);
 }
 
 .navbar-container {
@@ -265,17 +267,24 @@ header.scrolled .navbar {
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: var(--text-light);
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
-.logo span {
-  color: var(--accent-terracotta);
+.logo img {
+  height: 52px;
+  width: auto;
+  background-color: #FFFFFF;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(45, 58, 52, 0.06);
+  border: 1px solid rgba(94, 138, 117, 0.12);
+  transition: var(--transition-smooth);
+}
+
+header.scrolled .logo img {
+  box-shadow: none;
+  border-color: rgba(94, 138, 117, 0.05);
 }
 
 .nav-menu {
@@ -286,14 +295,23 @@ header.scrolled .navbar {
 
 .nav-link {
   font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--text-light);
+  font-weight: 550;
+  color: var(--text-light); /* Cream initially over hero */
   position: relative;
   padding: 0.5rem 0;
+  transition: var(--transition-smooth);
+}
+
+header.scrolled .nav-link {
+  color: var(--text-dark); /* Dark green on light scroll */
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
+}
+
+header.scrolled .nav-link:hover, header.scrolled .nav-link.active {
+  color: var(--accent-terracotta) !important;
 }
 
 .nav-link::after {
@@ -305,6 +323,10 @@ header.scrolled .navbar {
   height: 2px;
   background-color: var(--accent-gold);
   transition: var(--transition-smooth);
+}
+
+header.scrolled .nav-link::after {
+  background-color: var(--accent-terracotta);
 }
 
 .nav-link:hover::after, .nav-link.active::after {
@@ -840,15 +862,18 @@ footer {
 }
 
 .footer-logo {
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
-.footer-logo span {
-  color: var(--accent-terracotta);
+.footer-logo img {
+  height: 52px;
+  width: auto;
+  background-color: #FFFFFF;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(94, 138, 117, 0.1);
+  display: block;
 }
 
 .footer-col h4 {
