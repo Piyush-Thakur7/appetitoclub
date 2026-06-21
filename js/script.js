@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const revealObserver = new IntersectionObserver(revealCallback, {
     root: null, // Viewport
-    threshold: 0.15 // Trigger when 15% of the element is visible
+    threshold: 0.02 // Trigger when 2% of the element is visible (prevents tall elements from being hidden on mobile)
   });
 
   document.querySelectorAll('.reveal').forEach(element => {
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         statsObserver.unobserve(statsSection);
       }
     }, {
-      threshold: 0.5 // Trigger when half of the stats section is in view
+      threshold: 0.1 // Trigger when 10% of the stats section is in view (safer for mobile screens)
     });
 
     statsObserver.observe(statsSection);
