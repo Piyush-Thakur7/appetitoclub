@@ -1428,30 +1428,22 @@ textarea.form-control {
   body { font-size: 15px; }
   .container { padding: 3rem 0; }
   
-  /* Top info bar styling on tablet/mobile */
-  .top-bar-content {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+  /* Hide top bar on mobile/tablet to keep navbar clean and prevent height mismatch */
+  .top-bar {
+    display: none;
   }
   
-  .top-info-left {
-    flex-direction: column;
-    gap: 0.35rem;
-    align-items: center;
-  }
-  
-  /* Mobile menu setup */
+  /* Mobile menu setup - now positioned directly below the header */
   .hamburger {
     display: block;
   }
   
   .nav-menu {
     position: fixed;
-    top: calc(var(--header-height) + 38px); /* Account for top bar */
+    top: var(--header-height);
     left: -100%;
     width: 100%;
-    height: calc(100vh - var(--header-height) - 38px);
+    height: calc(100vh - var(--header-height));
     background-color: var(--bg-primary);
     flex-direction: column;
     align-items: center;
@@ -1514,6 +1506,43 @@ textarea.form-control {
   .contact-form-wrapper {
     padding: 2rem 1.5rem;
   }
+  
+  /* Optimize Lightbox on mobile/tablet */
+  .lightbox-nav {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
+  .lightbox-prev {
+    left: 0.5rem;
+  }
+  .lightbox-next {
+    right: 0.5rem;
+  }
+  .lightbox-content {
+    max-width: 90%;
+  }
+  .lightbox-caption {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Stacking menu cards vertically for small tablets & mobile screens */
+@media (max-width: 600px) {
+  .menu-card {
+    flex-direction: column;
+  }
+  
+  .menu-card-img {
+    width: 100%;
+    height: 220px;
+  }
+  
+  .menu-card-content {
+    width: 100%;
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1544,5 +1573,21 @@ textarea.form-control {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+  
+  .cta-banner h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-contact-info {
+    gap: 1.5rem;
+  }
+  
+  .modal-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .modal-title {
+    font-size: 1.6rem;
   }
 }
